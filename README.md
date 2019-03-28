@@ -31,35 +31,51 @@ Kafka : This API connects to Kafka cluster .  The Connection string is configura
 
 REST end points :
 
-
+-------------------------------------------------------------------------------------------
 PUT employee
+
 Description : to insert employee record in mongodb. 
 Body params : id,employeeName,employeeRole,phoneNumber,Age. [raw - application/JSON]
+-------------------------------------------------------------------------------------------
 
 PATCH employee
+
 Description : to update employee record in mongodb. 
 Body params : id,employeeName,employeeRole,phoneNumber,Age. [raw - application/JSON]
+-------------------------------------------------------------------------------------------
 
 DELETE employee/{id}
+
 Description : to delete employee record in mongodb of given ID.
+-------------------------------------------------------------------------------------------
+
 
 PUT employeeAddress
+
 Description : to insert employee address in kafka cluster using given id.  
 Body params : id,address. [raw - application/JSON]
+-------------------------------------------------------------------------------------------
+
 
 GET employeeAddress/{id}
+
 Description : to get the address of the employee for given ID from Kafka cluster.  
 Header : Content-Type:application/json
+-------------------------------------------------------------------------------------------
+
 
 GET viewemployee
+
 Description : to get the aggregated details from Kafka and mongodb.  
 Header : Content-Type:application/json
+-------------------------------------------------------------------------------------------
+
 
 GET viewemployee/{id}
 Description : to get the aggregated employee detail from Kafka and mongodb for given id.  
 Header : Content-Type:application/json
 
-
+-------------------------------------------------------------------------------------------
 
 
 
