@@ -27,7 +27,7 @@ port no : 8014 (configurable in application.properties) / exposed port from dock
 
 MongoDB : This api connects to the mongoDB cloud (Atlas). The Connection string is configurable in application.properties (can be replaced with onprem DB as well)
 
-Kafka : This API connects to Kafka cluster .  The Connection string is configurable in application.properties (can be replaced with onprem DB as well)
+Kafka : This API connects to Kafka cluster .  The Connection string is configurable in application.properties (can be replaced with onprem Kafka as well)
 
 REST end points :
 
